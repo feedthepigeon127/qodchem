@@ -1,0 +1,35 @@
+\documentclass[border=3pt,varwidth=110mm]{standalone}
+%standard width: 70 mm
+\input{preamble}
+\excludecomment{answer}
+%\includecomment{answer}
+
+\begin{document}
+Consider the following conversion:
+\begin{center}
+\schemestart
+\chemfig{*5(--(-[:-30]OH)(-[:30])---)}
+\arrow{->[Step (I)]}
+\parbox{2cm}{\centering intermediate\\compound}
+\arrow{->[Step (II)]}
+\chemfig{*5(--(-)---)}
+\schemestop
+\end{center}
+Which of the following combinations can achieve the above conversion?
+
+\begin{center}
+\begin{tabular}{ccc}
+   & \underline{Reagent used in Step (I)} & \underline{Reagent used in Step (II)} \\[1em]
+A. & concentrated \ch{H2SO4}  & \ch{LiAlH4} \\[1em]
+B. & acidified \ch{KMnO4}  & \ch{LiAlH4} \\[1em]
+C. & concentrated \ch{H2SO4}  & \ch{H2/Ni} \\[1em]
+D. & acidified \ch{KMnO4}  & \ch{H2/Ni} \\[1em]
+\end{tabular}
+\end{center}
+
+\begin{answer}
+\hrulefill\par
+\textbf{Ans: C}
+
+\end{answer}
+\end{document}

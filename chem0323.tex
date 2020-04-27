@@ -1,0 +1,37 @@
+\documentclass[border=3pt,varwidth=85mm]{standalone}
+%standard width: 70 mm
+\input{preamble}
+\excludecomment{answer}
+%\includecomment{answer}
+
+\begin{document}
+ 
+\begin{center}
+\begin{tabular*}{.8\textwidth}{cc @{\extracolsep{\fill}}c}
+\chemfig{-[:30]-[:-30](-[:-90])-[:30]} &
+\chemfig{-[:30](-[:60])(-[:120])-[:-30]} &	
+\chemfig{-[:30]-[:-30]-[:30]-[:-30]} \\[2em]
+\textbf{A} & \textbf{B} & \textbf{C}
+\end{tabular*}
+\end{center}
+
+Which of the following statements concerning the above three molecules are correct?
+\begin{itemize}
+\item[(1)] They exhibit structural isomerism.
+\item[(2)] The boiling point in ascending order is \textbf{B} < \textbf{A} < \textbf{C}. 
+\item[(3)] They have the same heat of combustion. 
+\end{itemize}
+
+\begin{choices}
+\choice (1) and (2) only
+\choice (1) and (3) only
+\choice (2) and (3) only
+\choice (1), (2) and (3)
+\end{choices}
+
+\begin{answer}
+\hrulefill\par
+\textbf{Ans: A}
+
+\end{answer}
+\end{document}

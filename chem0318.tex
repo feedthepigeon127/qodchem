@@ -1,0 +1,114 @@
+\documentclass[border=3pt,varwidth=70mm]{standalone}
+%standard width: 70 mm
+\input{preamble}
+\excludecomment{answer}
+%\includecomment{answer}
+           
+\begin{document}
+Which of the following graphs shows the variation in pH values for \SI{0.1}{\Molar} aqueous solutions of \ch{HF}, \ch{HCl}, \ch{HBr} and \ch{HI}?
+ 
+\begin{choices}
+\choice \text{}\\
+\begin{asy}
+size(40mm);
+import graph;
+defaultpen(fontsize(5pt));
+real s=0.3/2.12;
+
+real HF=2.12*s;
+real HCl=1.08*s;
+real HBr=1.08*s;
+real HI=1.08*s;
+
+dot((0.1,HF)); dot((0.2,HCl)); dot((0.3,HBr)); dot((0.4,HI));
+draw((0.1,HF)--(0.2,HCl)--(0.3,HBr)--(0.4,HI));
+
+draw((0,0)--(0.5,0));
+draw(Label("HF", BeginPoint), (0.1,-0.01)--(0.1,0.01));
+draw(Label("HCl", BeginPoint), (0.2,-0.01)--(0.2,0.01));
+draw(Label("HBr", BeginPoint), (0.3,-0.01)--(0.3,0.01));
+draw(Label("HI", BeginPoint), (0.4,-0.01)--(0.4,0.01));
+draw(Label("pH", EndPoint), (0,0)--(0,0.4), Arrow(1mm));
+\end{asy}
+
+
+\choice \text{}\\
+\begin{asy}
+size(40mm);
+import graph;
+defaultpen(fontsize(5pt));
+real s=0.3/2.12;
+
+real HF=1.75*s;
+real HCl=1.75*s;
+real HBr=1.75*s;
+real HI=1.75*s;
+
+dot((0.1,HF)); dot((0.2,HCl)); dot((0.3,HBr)); dot((0.4,HI));
+draw((0.1,HF)--(0.2,HCl)--(0.3,HBr)--(0.4,HI));
+
+draw((0,0)--(0.5,0));
+draw(Label("HF", BeginPoint), (0.1,-0.01)--(0.1,0.01));
+draw(Label("HCl", BeginPoint), (0.2,-0.01)--(0.2,0.01));
+draw(Label("HBr", BeginPoint), (0.3,-0.01)--(0.3,0.01));
+draw(Label("HI", BeginPoint), (0.4,-0.01)--(0.4,0.01));
+draw(Label("pH", EndPoint), (0,0)--(0,0.4), Arrow(1mm));
+
+\end{asy}
+
+\choice \text{}\\
+\begin{asy}
+size(40mm);
+import graph;
+defaultpen(fontsize(5pt));
+real s=0.3/2.12;
+
+real HF=2.12*s;
+real HCl=1.08*s;
+real HBr=2.12*s;
+real HI=2.12*s;
+
+dot((0.1,HF)); dot((0.2,HCl)); dot((0.3,HBr)); dot((0.4,HI));
+draw((0.1,HF)--(0.2,HCl)--(0.3,HBr)--(0.4,HI));
+
+draw((0,0)--(0.5,0));
+draw(Label("HF", BeginPoint), (0.1,-0.01)--(0.1,0.01));
+draw(Label("HCl", BeginPoint), (0.2,-0.01)--(0.2,0.01));
+draw(Label("HBr", BeginPoint), (0.3,-0.01)--(0.3,0.01));
+draw(Label("HI", BeginPoint), (0.4,-0.01)--(0.4,0.01));
+draw(Label("pH", EndPoint), (0,0)--(0,0.4), Arrow(1mm));
+
+\end{asy}
+
+\choice \text{}\\
+\begin{asy}
+size(40mm);
+import graph;
+defaultpen(fontsize(5pt));
+real s=0.3/2.12;
+
+real HF=2*s;
+real HCl=1.4*s;
+real HBr=1.1*s;
+real HI=0.9*s;
+
+dot((0.1,HF)); dot((0.2,HCl)); dot((0.3,HBr)); dot((0.4,HI));
+draw((0.1,HF)--(0.2,HCl)--(0.3,HBr)--(0.4,HI));
+
+draw((0,0)--(0.5,0));
+draw(Label("HF", BeginPoint), (0.1,-0.01)--(0.1,0.01));
+draw(Label("HCl", BeginPoint), (0.2,-0.01)--(0.2,0.01));
+draw(Label("HBr", BeginPoint), (0.3,-0.01)--(0.3,0.01));
+draw(Label("HI", BeginPoint), (0.4,-0.01)--(0.4,0.01));
+draw(Label("pH", EndPoint), (0,0)--(0,0.4), Arrow(1mm));
+
+\end{asy}
+\end{choices}
+
+\begin{answer}
+\hrulefill\par
+\textbf{Ans: A}
+
+
+\end{answer}
+\end{document}
